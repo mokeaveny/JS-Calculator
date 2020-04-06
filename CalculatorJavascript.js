@@ -1,3 +1,14 @@
+////////////////////////////
+
+const container = document.getElementById("container");
+const display = document.getElementById("display");
+const buttons = document.getElementById("buttons");
+
+container.appendChild(display);
+container.appendChild(buttons);
+
+
+
 function add(num1, num2)
 {
 	return (num1 + num2);
@@ -41,3 +52,4 @@ function operate(operator, num1, num2)
 		return "Not a valid operator";
 	}
 }
+
