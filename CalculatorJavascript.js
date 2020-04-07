@@ -35,11 +35,9 @@ buttons.addEventListener("click", (e) => {
 			if (firstNumber == "")
 			{
 				firstNumber = display.textContent;
-				console.log(firstNumber);
 			}
 			display.textContent = buttonContent;
 			operator = clickedButton.textContent;
-			console.log(operator);
 		}
 		if (action == "clear") {
 			firstNumber = ""
@@ -50,7 +48,8 @@ buttons.addEventListener("click", (e) => {
 		if (action == "calculate") {
 			if (firstNumber == "")
 			{
-				display.textContent = firstNumber;
+				firstNumber = display.textContent; //If no number has been pressed before equals then make the firstNumber "0"
+				operator = "" // Reset the operator
 			}
 			else
 			{
